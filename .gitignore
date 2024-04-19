@@ -1,3 +1,5 @@
+_pages_unused
+_posts_unused
 _site
 .bundle
 .sass-cache
@@ -10,4 +12,4 @@ Gemfile.lock
 assets/libs/
 node_modules/
 vendor
-_posts_old
+unused

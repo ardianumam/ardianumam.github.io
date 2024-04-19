@@ -1,16 +1,13 @@
 ---
-layout: page
-title: submenus
+layout: about
+title: Blog
 nav: true
-nav_order: 8
+nav_order: 2
 dropdown: true
 children:
-  - title: publications
-    permalink: /publications/
-  - title: divider
-  - title: projects
-    permalink: /projects/
-  - title: divider
-  - title: blog
+  - title: All blogs
     permalink: /blog/
+  - title: divider
+  - title: Machine learning note nycu
+    permalink: /ml-note-nycu/
 ---
