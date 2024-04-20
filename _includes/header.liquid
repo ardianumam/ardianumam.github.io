@@ -2,28 +2,26 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.title == 'blank' %}
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
-            {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
-            {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
-            {% endif %}
-          {% else %}
-            {{- site.title -}}
+
+      <!-- Give website title before the navigation menu -->
+      <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+        {% if site.title == 'blank' %}
+          {% if site.first_name %}
+            <span class="font-weight-bold">
+              {{- site.first_name -}}
+            </span>
           {% endif %}
-        </a>
-      {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
-        <div class="navbar-brand social">{% include social.liquid %}</div>
-      {% endif %}
+          {% if site.middle_name %}
+            {{- site.middle_name -}}
+          {% endif %}
+          {% if site.last_name %}
+            {{- site.last_name - | append: "'s page"}}
+          {% endif %}
+        {% else %}
+          {{- site.title -}}
+        {% endif %}
+      </a>
+      
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"
@@ -39,14 +37,17 @@
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
       </button>
-
+      
+      <!-- (i) Navigation menu, (ii) social media icons and (iii) toogle theme-->
       <div class="collapse navbar-collapse text-right" id="navbarNav">
-        <ul class="navbar-nav ml-auto flex-nowrap">
+        <ul class="navbar-nav flex-nowrap">
+
           {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
+            {%- comment -%} this is only to assign a tittle into variable used for "about menu" {%- endcomment -%}
+            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %} 
           {% endfor %}
 
-          <!-- About -->
+          <!-- About nav-menu -->
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
               {{- about_title }}
@@ -56,10 +57,9 @@
             </a>
           </li>
 
-          <!-- Other pages -->
+          <!-- Other nav-menus -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
-            {% comment %}  <p style="color:red;">Test: {{p.permalink}}</p> {% endcomment %} 
             {% if p.nav and p.autogen == null %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
@@ -108,18 +108,25 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+        </ul>
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!--Social media icons-->
+          <div class="navbar-brand social text-right">{% include social.liquid %}</div>
+
+          <!-- Toogle theme mode menu -->    
           {% if site.enable_darkmode %}
-            <!-- Toogle theme mode -->
-            <li class="toggle-container">
-              <button id="light-toggle" title="Change theme">
-                <i class="ti ti-sun-moon" id="light-toggle-system"></i>
-                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
-                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
-              </button>
-            </li>
+          <li class="toggle-container">
+            <button id="light-toggle" title="Change theme">
+              <i class="ti ti-sun-moon" id="light-toggle-system"></i>
+              <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
+              <i class="ti ti-sun-filled" id="light-toggle-light"></i>
+            </button>
+          </li>
           {% endif %}
         </ul>
       </div>
+      
+
     </div>
   </nav>
   {% if site.enable_progressbar %}

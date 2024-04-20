@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Machine learning notes NYCU
-permalink: /ml-note-nycu
+permalink: /ml-note-nycu/
 nav: false
 ---
 
