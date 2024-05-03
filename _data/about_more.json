@@ -1,0 +1,28 @@
+{
+    "experience": {
+
+    },
+    "education": {
+        "1": {
+            "title": "BSc in Electrical Engineering",
+            "year": "",
+            "school": "Gadjah Mada University",
+            "logo": "assets/img/about/ugm_logo.svg",
+            "description": "My bachelor degree was in control and system engineering"
+        },
+        "2": {
+            "title": "MSc in Electrical Engineering and Computer Science",
+            "year": "",
+            "school": "National Chiao Tung University",
+            "logo": "assets/img/about/nctu_logo.svg",
+            "description": "Join <a href='http://islab.cs.nctu.edu.tw/joomla/'>Intelligent System Lab</a>"
+        },
+        "3": {
+            "title": "PhD in Electrical Engineering and Computer Science",
+            "year": "2020-now",
+            "school": "National Yang Ming Chiao Tung University",
+            "logo": "assets/img/about/nycu_logo.svg",
+            "description": "Join <a href='https://vllab.cs.nycu.edu.tw'>Vision and Learning Lab</a>"
+        }
+    }
+}

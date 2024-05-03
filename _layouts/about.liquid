@@ -42,7 +42,7 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
-    <!-- News -->
+    {% comment %} News {% endcomment %}
     {% if page.news and site.announcements.enabled %}
       <h2>
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
@@ -50,7 +50,7 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
-    <!-- Latest posts -->
+    {% comment %} Latest posts {% endcomment %}
     {% if site.latest_posts.enabled %}
       <h2>
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest posts</a>
@@ -58,7 +58,7 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-    <!-- Selected papers -->
+    {% comment %} Selected papers {% endcomment %}
     {% if page.selected_papers %}
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected publications</a>
@@ -66,7 +66,34 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
-    <!-- Social -->
+    {% comment %} Education {% endcomment %}
+    {% if page.education %}
+      <h2>Education</h2>
+      <div class="experiences">
+        <ol>
+          {% for edu_item in site.data.about_more["education"]%}
+            <li>
+              <div class="row">
+                <div class="col-sm-2 logo">
+                  <img class="logo" src="{{edu_item[1]["logo"]}}"/>
+                  </div>
+                <div class="col-sm-10 content">
+                  <div class="title">{{edu_item[1]["school"]}}</div>
+                  {{edu_item[1]["title"]}}
+                  {% if {{edu_item[1]["year"]}} != "" %}
+                    ,&nbsp;{{edu_item[1]["year"]}}<br>
+                  {% endif %}
+                  <div class="description">{{edu_item[1]["description"]}}</div>
+                </div>
+              </div>
+            </li>
+          {% endfor %}
+        </ol>
+      </div>
+    {% endif %}
+    
+
+    {% comment %} Social {% endcomment %}
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>

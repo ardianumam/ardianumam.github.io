@@ -654,8 +654,37 @@ footer.sticky-bottom {
   }
 }
 
-// Publications
 
+// Experience
+.experiences { 
+  ol {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    li {
+      margin-bottom: 1rem;
+      .logo {
+        max-width: 100%;
+        height: auto; 
+        vertical-align: middle;
+        text-align: center;
+      }
+      
+      .content {
+        text-align: left;
+        .title {
+          font-weight: bolder;
+        }
+        .description {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+
+// Publications
 .publications {
   margin-top: 2rem;
 
