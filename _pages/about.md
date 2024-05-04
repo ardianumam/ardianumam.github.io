@@ -13,8 +13,8 @@ news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 education: true
-job: true
-volunteer: true
+experience: true
+service: true
 award: true
 
 toc:

@@ -69,21 +69,50 @@ layout: default
     {% comment %} Education {% endcomment %}
     {% if page.education %}
       <h2>Education</h2>
+      {%  assign sorted_educations =  site.data.about_more.education | sort: "order" | reverse %} 
       <div class="experiences">
         <ol>
-          {% for edu_item in site.data.about_more["education"]%}
+          {% for edu_item in sorted_educations %}
             <li>
               <div class="row">
-                <div class="col-sm-2 logo">
-                  <img class="logo" src="{{edu_item[1]["logo"]}}"/>
+                <div class="col-sm-2 text-center">
+                  <img class="logo" src="{{edu_item["logo"]}}"/>
                   </div>
                 <div class="col-sm-10 content">
-                  <div class="title">{{edu_item[1]["school"]}}</div>
-                  {{edu_item[1]["title"]}}
-                  {% if {{edu_item[1]["year"]}} != "" %}
-                    ,&nbsp;{{edu_item[1]["year"]}}<br>
-                  {% endif %}
-                  <div class="description">{{edu_item[1]["description"]}}</div>
+                  <div class="title">{{edu_item["school"]}}</div>
+                  {{edu_item["title"]}}
+                  {%- if edu_item["year"] != "" -%}
+                    ,&nbsp;{{edu_item["year"]}}<br>
+                  {%- endif -%}
+                  <div class="description">{{edu_item["description"]}}</div>
+                </div>
+              </div>
+            </li>
+          {% endfor %}
+        </ol>
+      </div>
+    {% endif %}
+
+
+    {% comment %} Work Experience {% endcomment %}
+    {% if page.experience %}
+      <h2>Work experience</h2>
+      {%  assign sorted_experiences = site.data.about_more.experience | sort: "order" | reverse %} 
+      <div class="experiences">
+        <ol>
+          {% for exp_item in sorted_experiences %}
+            <li>
+              <div class="row">
+                <div class="col-sm-2 text-center">
+                  <img class="logo" src="{{exp_item["logo"]}}"/>
+                  </div>
+                <div class="col-sm-10 content">
+                  <div class="title">{{exp_item["title"]}}</div>
+                  {{exp_item["venue"]}}
+                  {%- if exp_item["year"] != "" -%}
+                    ,&nbsp;{{exp_item["year"]}}<br>
+                  {%- endif -%}
+                  <div class="description">{{exp_item["description"]}}</div>
                 </div>
               </div>
             </li>
@@ -92,6 +121,37 @@ layout: default
       </div>
     {% endif %}
     
+    {% comment %} Award {% endcomment %}
+    {% if page.award %}
+      <h2>Award</h2>
+      {%  assign sorted_award = site.data.about_more.award | sort: "order" %} 
+      <div class="award">
+        <ul>
+          {% for item in sorted_award %}
+            <li>
+              <div class="title">{{item.title}}</div>
+            </li>
+            <div class="description">{{item.description}}</div>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% comment %} Service {% endcomment %}
+    {% if page.service %}
+      <h2>Community service</h2>
+      {%  assign sorted_serice = site.data.about_more.service | sort: "order" %} 
+      <div class="service">
+        <ul>
+          {% for item in sorted_serice %}
+            <li>
+              <div class="title">{{item.title}}</div>
+            </li>
+            <div class="description">{{item.description}}</div>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
 
     {% comment %} Social {% endcomment %}
     {% if page.social %}

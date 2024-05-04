@@ -1,28 +1,109 @@
 {
-    "experience": {
-
-    },
-    "education": {
-        "1": {
+    "experience": [
+        {
+            "title": "Avionic Engineer",
+            "year": "2015 - 2016",
+            "venue": "LAPAN (National Institute of Aeronautics and Space)",
+            "logo": "assets/img/about/lapan_logo.svg",
+            "description": "Working on Maritime Surveillance System using UAV (Unmanned Aerial Vehicle)",
+            "order": 1
+        },
+        {
+            "title": "Summer Research Intern",
+            "year": "Jul - Aug 2018",
+            "venue": "<a href='https://www.itri.org.tw/english'>ITRI</a> (Industrial Technology Research Institute)",
+            "logo": "assets/img/about/itri_logo.png",
+            "description": "Working on deep learning model compression, such as sparse regularization and pruning",
+            "order": 2
+        },
+        {
+            "title": "Graduate Research Assistant",
+            "year": "2018 - 2019",
+            "venue": "<a href='https://eic2.web.nycu.edu.tw/?page_id=1468'>Computer Vision Research Center</a> - NCTU",
+            "logo": "assets/img/about/nctu_logo.svg",
+            "description": "Working on AI Smart Drone project, specifically in charge of optimizing depth map and detector models deployed in Jetson TX2",
+            "order": 3
+        },
+        {
+            "title": "Graduate Intern",
+            "year": "Apr - Dec 2022",
+            "venue": "<a href='https://google.com'>Google</a>",
+            "logo": "assets/img/about/google_logo.svg",
+            "description": "Working on non-reference audio quality estimation which exploits both labeled data and unlabelled data via self-supervised approach",
+            "order": 4
+        },
+        {
+            "title": "Lecturer",
+            "year": "2019 - Now",
+            "venue": "<a href='https://www.itb.ac.id/'>Institut Teknologi Bandung</a>",
+            "logo": "assets/img/about/itb_logo.svg",
+            "description": "Faculty member in School of Electrical Engineering and Informatics",
+            "order": 5
+        }
+    ],
+    "education": [
+        {
             "title": "BSc in Electrical Engineering",
             "year": "",
             "school": "Gadjah Mada University",
             "logo": "assets/img/about/ugm_logo.svg",
-            "description": "My bachelor degree was in control and system engineering"
+            "description": "My bachelor degree was in control and system engineering",
+            "order": 1
         },
-        "2": {
-            "title": "MSc in Electrical Engineering and Computer Science",
+        {
+            "title": "MSc in Computer Science",
             "year": "",
             "school": "National Chiao Tung University",
             "logo": "assets/img/about/nctu_logo.svg",
-            "description": "Join <a href='http://islab.cs.nctu.edu.tw/joomla/'>Intelligent System Lab</a>"
+            "description": "Join <a href='http://islab.cs.nctu.edu.tw/joomla/'>Intelligent System Lab</a>",
+            "order": 2
         },
-        "3": {
-            "title": "PhD in Electrical Engineering and Computer Science",
-            "year": "2020-now",
+        {
+            "title": "PhD in Computer Science",
+            "year": "2020 - Now",
             "school": "National Yang Ming Chiao Tung University",
             "logo": "assets/img/about/nycu_logo.svg",
-            "description": "Join <a href='https://vllab.cs.nycu.edu.tw'>Vision and Learning Lab</a>"
+            "description": "Join <a href='https://vllab.cs.nycu.edu.tw'>Vision and Learning Lab</a>",
+            "order": 3
         }
-    }
+    ],
+    "award": [  
+                {
+                    "title":"Doctoral Scholarship Award",
+                    "description": "Awarded a doctoral (full) scholarship by the Ministry of Education - Taiwan",
+                    "order": 1
+                },
+                {
+                    "title":"Best M.S. Student Award",
+                    "description": "Awarded as the best master student of the Electrical Engineering and Computer Science Department in the commencement day of NCTU, 2018",
+                    "order": 2
+                },
+                {
+                    "title":"TOP1 Final Project Competition",
+                    "description": "Line Following Robot competition, by \"Deep Learning Course (ECM9042)\", NCTU Fall Semester, 2020",
+                    "order": 3
+                },
+                {
+                    "title":"TOP1 in-class Kaggle Competition",
+                    "description": "Best entry in the leader board of in-class kaggle competition about movie recommendation system held by “Cloud Computing and Big Data Analytics Class” – NCTU, Spring 2017. The leader board can be seen <a href='https://www.kaggle.com/c/can-you-guess-the-movie-rating/leaderboard'>here</a>",
+                    "order": 4
+                },
+                {
+                    "title":"Siswa Teladan Putra 1 - Klaten",
+                    "description": "Annual event held by Dinas Pendidikan Klaten to select student representing Siswa Teladan in province level, Central Java",
+                    "order": 5
+                }
+            ],
+    "service": [  
+        {
+            "title":"Conference reviewer",
+            "description": "CVPR, ICCV, ECCV, AAAI, IJCAI",
+            "order": 1
+        },
+        {
+            "title":"Journal reviewer",
+            "description": "CVIU, ACM CSUR",
+            "order": 2
+        }
+    ]
 }
