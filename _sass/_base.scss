@@ -654,6 +654,72 @@ footer.sticky-bottom {
   }
 }
 
+//Page project
+.research {
+  .author {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .content {
+    text-align: justify;
+  }
+  .hyperlink-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 10px;
+    border-radius: 50px;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  .hyperlink-button-text {
+    margin-right: 10px; 
+    color: white;
+  }
+
+  .bibtex-container {
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+    }
+    
+  .bibtex-container:hover .copy-btn {
+  visibility: visible;
+  }
+    
+  .copy-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  visibility: hidden;
+  }
+  .fa-check {
+    color: green; /* Or any color you prefer */
+    }
+
+  *.title {
+    text-align: center;
+    font-weight: bold;
+  }
+  .title {
+    text-align: center;
+    font-weight: bold;
+  }
+  h1, h2 {
+    .title {
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
+
+.research > * .title {  /* Combining descendant and child selector for higher specificity */
+  text-align: center;
+  font-weight: bold;
+  color: inherit;  /* Inherits color from parent element (removes global color) */
+}
 
 // Experience
 .experiences { 

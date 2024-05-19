@@ -16,7 +16,6 @@ education: true
 experience: true
 service: true
 award: true
-
 toc:
   sidebar: left
 ---

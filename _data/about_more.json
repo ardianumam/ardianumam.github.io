@@ -4,7 +4,7 @@
             "title": "Avionic Engineer",
             "year": "2015 - 2016",
             "venue": "LAPAN (National Institute of Aeronautics and Space)",
-            "logo": "assets/img/about/lapan_logo.svg",
+            "logo": "assets/img/about/lapan_logo.png",
             "description": "Working on Maritime Surveillance System using UAV (Unmanned Aerial Vehicle)",
             "order": 1
         },
@@ -20,7 +20,7 @@
             "title": "Graduate Research Assistant",
             "year": "2018 - 2019",
             "venue": "<a href='https://eic2.web.nycu.edu.tw/?page_id=1468'>Computer Vision Research Center</a> - NCTU",
-            "logo": "assets/img/about/nctu_logo.svg",
+            "logo": "assets/img/about/nctu_logo.png",
             "description": "Working on AI Smart Drone project, specifically in charge of optimizing depth map and detector models deployed in Jetson TX2",
             "order": 3
         },
@@ -28,7 +28,7 @@
             "title": "Graduate Intern",
             "year": "Apr - Dec 2022",
             "venue": "<a href='https://google.com'>Google</a>",
-            "logo": "assets/img/about/google_logo.svg",
+            "logo": "assets/img/about/google_logo.png",
             "description": "Working on non-reference audio quality estimation which exploits both labeled data and unlabelled data via self-supervised approach",
             "order": 4
         },
@@ -36,7 +36,7 @@
             "title": "Lecturer",
             "year": "2019 - Now",
             "venue": "<a href='https://www.itb.ac.id/'>Institut Teknologi Bandung</a>",
-            "logo": "assets/img/about/itb_logo.svg",
+            "logo": "assets/img/about/itb_logo.png",
             "description": "Faculty member in School of Electrical Engineering and Informatics",
             "order": 5
         }
@@ -46,15 +46,15 @@
             "title": "BSc in Electrical Engineering",
             "year": "",
             "school": "Gadjah Mada University",
-            "logo": "assets/img/about/ugm_logo.svg",
-            "description": "My bachelor degree was in control and system engineering",
+            "logo": "assets/img/about/ugm_logo.png",
+            "description": "My bachelor degree is in control and system engineering",
             "order": 1
         },
         {
             "title": "MSc in Computer Science",
             "year": "",
             "school": "National Chiao Tung University",
-            "logo": "assets/img/about/nctu_logo.svg",
+            "logo": "assets/img/about/nctu_logo.png",
             "description": "Join <a href='http://islab.cs.nctu.edu.tw/joomla/'>Intelligent System Lab</a>",
             "order": 2
         },
@@ -62,7 +62,7 @@
             "title": "PhD in Computer Science",
             "year": "2020 - Now",
             "school": "National Yang Ming Chiao Tung University",
-            "logo": "assets/img/about/nycu_logo.svg",
+            "logo": "assets/img/about/nycu_logo.png",
             "description": "Join <a href='https://vllab.cs.nycu.edu.tw'>Vision and Learning Lab</a>",
             "order": 3
         }
@@ -80,12 +80,12 @@
                 },
                 {
                     "title":"TOP1 Final Project Competition",
-                    "description": "Line Following Robot competition, by \"Deep Learning Course (ECM9042)\", NCTU Fall Semester, 2020",
+                    "description": "<a href='https://github.com/ardianumam/dl-2020-final-project'>Line Following Robot competition</a>, by \"Deep Learning Course (ECM9042)\", NCTU Fall Semester, 2020",
                     "order": 3
                 },
                 {
                     "title":"TOP1 in-class Kaggle Competition",
-                    "description": "Best entry in the leader board of in-class kaggle competition about movie recommendation system held by “Cloud Computing and Big Data Analytics Class” – NCTU, Spring 2017. The leader board can be seen <a href='https://www.kaggle.com/c/can-you-guess-the-movie-rating/leaderboard'>here</a>",
+                    "description": "Best entry in <a href='https://www.kaggle.com/c/can-you-guess-the-movie-rating/leaderboard'>the leader board</a> of in-class kaggle competition about movie recommendation system held by “Cloud Computing and Big Data Analytics Class” – NCTU, Spring 2017",
                     "order": 4
                 },
                 {
