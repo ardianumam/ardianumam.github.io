@@ -5,7 +5,8 @@ date: 2017-09-20 11:12:00-0400
 description: 
 tags: machine-learning regression lse
 categories: machine-learning
-disqus_comments: false
+disqus_comments: true
+comments: true
 related_posts: true
 ---
 

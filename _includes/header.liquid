@@ -115,13 +115,33 @@
 
           <!-- Toogle theme mode menu -->    
           {% if site.enable_darkmode %}
-          <li class="toggle-container">
+            
+          {% comment %} <li class="toggle-container">
             <button id="light-toggle" title="Change theme">
               <i class="ti ti-sun-moon" id="light-toggle-system"></i>
-              <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
+              <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <!--moon icon -->
               <i class="ti ti-sun-filled" id="light-toggle-light"></i>
             </button>
-          </li>
+          </li> {% endcomment %}
+
+          {% comment %} <li class="toggle-container">
+            <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
+          </li> {% endcomment %}
+
+          <div class="theme-container">
+            <button id="theme-button" title="Change theme">
+              <i class="fas fa-lightbulb"></i>
+            </button>
+              <div class="theme-options">
+                <button id="light-button">
+                  <i class="ti ti-sun-filled" id="light-icon"></i> (light)
+                  </button>
+                <button id="dark-button">
+                  <i class="ti ti-moon-filled" id="dark-icon"></i> (dark)
+                </button>
+              </div>
+          </div>
+          
           {% endif %}
         </ul>
       </div>

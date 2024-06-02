@@ -234,39 +234,6 @@ let determineComputedTheme = () => {
 
 let initTheme = () => {
 
-  // START: Try
-  document.addEventListener("DOMContentLoaded", function() {
-    const themeButton = document.getElementById("theme-button");
-    const themeOptions = document.querySelector(".theme-options");
-
-    themeButton.addEventListener("click", () => {
-      // Toggle 'active' class on the container (for button visibility)
-      themeButton.parentElement.classList.toggle("active");
-    });
-
-    // Optional: Handle clicks on theme options (light/dark buttons)
-    themeOptions.addEventListener("click", (event) => {
-      event.preventDefault();  // Prevent default form submission
-      console.log("icon clicked 1?");
-      const clickedButton = event.target;
-      const icon_name = clickedButton.getAttribute("class");
-      console.log("icon clicked 2?: ", event.currentTarget);
-      console.log("icon clicked 3?: ", clickedButton);
-      console.log("item class name: ", icon_name);
-      console.log("item class id: ", clickedButton.id);
-      if (clickedButton.id === "light-button" || clickedButton.id === "light-icon") {
-        // Implement light theme logic here (e.g., toggle a CSS class)
-        console.log("Light theme selected");
-        setThemeSetting("light");
-      } else if (clickedButton.id === "dark-button" || clickedButton.id === "dark-icon") {
-        // Implement dark theme logic here (e.g., toggle a CSS class)
-        console.log("Dark theme selected");
-        setThemeSetting("dark");
-      }
-    });
-  });
-  //END: Try
-
   let themeSetting = determineThemeSetting(); // define either light or dark (or system) --> currently is system by default (modified to light), and store it in locaStorage 
 
   setThemeSetting(themeSetting); // set parent html element of "data-theme-setting" to themeSetting value
@@ -285,5 +252,4 @@ let initTheme = () => {
   //   console.long("Dark color???")
   //   applyTheme();
   // });
-
 };

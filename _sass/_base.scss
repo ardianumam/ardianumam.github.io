@@ -365,6 +365,7 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// theme buttton
 #light-toggle {
   padding: 0;
   border: 0;
@@ -374,6 +375,58 @@ ul.task-list input[type="checkbox"] {
   &:hover {
     color: var(--global-hover-color);
   }
+}
+
+.theme-container {
+  position: relative; /* Needed for proper positioning of hidden buttons */
+  border: none;
+  display: flex;
+  button {
+    outline: none; /* Remove outline on focus (optional) */
+    border: none;
+    background: var(--global-bg-color);
+    color: var(--global-text-color);
+    padding: 5px 10px;
+  }
+  .theme-button{
+    display: flex;
+    align-items: center;
+  }
+
+  .theme-options {
+    display: none; /* Initially hide the theme options */
+    position: absolute; /* Absolute positioning within the container */
+    top: 40px;
+    button {
+      border: 1px solid var(--global-divider-color);
+    }
+  } 
+}
+
+// .theme-options {
+//   display: none; /* Initially hide the theme options */
+//   position: absolute; /* Absolute positioning within the container */
+//   // top: 100%; /* Position below the theme button */
+//   left: 0; /* Align to the left of the container */
+//   // background-color: #fff; /* Optional background color for options */
+//   // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for options */
+//   // border: none;
+//   // outline: none; /* Remove outline on focus (optional) */
+//   // background-color: (--global-bg-color);
+//   // #light-button, #dark-button {
+//   //   border: none;
+//   //   outline: none; /* Remove outline on focus (optional) */
+//   //   color: (--global-bg-color);
+//   // }
+// }
+
+// .theme-options button {
+//   /* Style the theme option buttons as desired */
+//   padding: 5px 10px;
+// }
+
+.theme-container:hover .theme-options {
+  display: block; /* Show theme options on hover state */
 }
 
 // Social (bottom)
@@ -654,12 +707,14 @@ footer.sticky-bottom {
   }
 }
 
-//Page project
+//Project page
 .research {
+  line-height: 1.4em;
   .author {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
     text-align: center;
+    font-size: 1.2rem;
   }
   .content {
     text-align: justify;
@@ -684,7 +739,22 @@ footer.sticky-bottom {
     width: 100%;
     overflow-x: auto;
     }
+    pre {
+      color: var(--global-text-color);
+      // color: red;
+      // background-color: var(--global-code-bg-color);
+      background-color: var(--global-divider-color);
+      border-radius: 6px;
+      padding: 6px 12px;
     
+      pre,
+      code {
+        background-color: transparent;
+        border-radius: 0;
+        margin-bottom: 0;
+        padding: 0;
+      }
+    }
   .bibtex-container:hover .copy-btn {
   visibility: visible;
   }
@@ -715,10 +785,36 @@ footer.sticky-bottom {
   }
 }
 
+
 .research > * .title {  /* Combining descendant and child selector for higher specificity */
   text-align: center;
   font-weight: bold;
   color: inherit;  /* Inherits color from parent element (removes global color) */
+}
+
+.project-page-home-button {
+  text-align: center; 
+  display: flex; 
+  align-items: center;
+  outline: none; /* Remove outline on focus (optional) */
+  border: none;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  padding: 10px 10px;
+  background: var(--global-bg-color);
+  a {
+    color: var(--global-text-color);
+  }
+}
+
+.project-page-nav {
+  position: fixed;
+  top: 0;
+  background: var(--global-bg-color);
+  text-align: center; 
+  width:100%; 
+  // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px var(--global-divider-color);
 }
 
 // Experience
@@ -818,7 +914,7 @@ footer.sticky-bottom {
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
+    color: var(--global-distill-app-color);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;
@@ -983,21 +1079,6 @@ footer.sticky-bottom {
 // Rouge Color Customization
 figure.highlight {
   margin: 0 0 1rem;
-}
-
-pre {
-  color: var(--global-theme-color);
-  background-color: var(--global-code-bg-color);
-  border-radius: 6px;
-  padding: 6px 12px;
-
-  pre,
-  code {
-    background-color: transparent;
-    border-radius: 0;
-    margin-bottom: 0;
-    padding: 0;
-  }
 }
 
 code {

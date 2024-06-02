@@ -89,7 +89,8 @@ html[data-theme="dark"] {
   }
 }
 
-html[data-theme-setting="dark"] {
+// if HTML attribute data-theme-setting="dark", show only the dark icon (moon) and hide system & light icons (select by element ID using # selector)  
+html[data-theme-setting="dark"] { //
   #light-toggle-system {
     display: none;
   }
@@ -101,7 +102,9 @@ html[data-theme-setting="dark"] {
   }
 
   #light-toggle-light {
-    display: none;
+    padding-left: 10px;
+    padding-top: 12px;
+    display: block;
   }
 }
 
@@ -111,7 +114,9 @@ html[data-theme-setting="light"] {
   }
 
   #light-toggle-dark {
-    display: none;
+    padding-left: 10px;
+    padding-top: 12px;
+    display: block;
   }
 
   #light-toggle-light {
@@ -120,3 +125,36 @@ html[data-theme-setting="light"] {
     display: block;
   }
 }
+
+
+// html[data-theme-setting="dark"] { //
+//   #light-toggle-system {
+//     display: none;
+//   }
+
+//   #light-toggle-dark {
+//     padding-left: 10px;
+//     padding-top: 12px;
+//     display: block;
+//   }
+
+//   #light-toggle-light {
+//     display: none;
+//   }
+// }
+
+// html[data-theme-setting="light"] {
+//   #light-toggle-system {
+//     display: none;
+//   }
+
+//   #light-toggle-dark {
+//     display: none;
+//   }
+
+//   #light-toggle-light {
+//     padding-left: 10px;
+//     padding-top: 12px;
+//     display: block;
+//   }
+// }
