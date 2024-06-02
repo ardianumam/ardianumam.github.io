@@ -808,6 +808,7 @@ footer.sticky-bottom {
 }
 
 .project-page-nav {
+  list-style: none;
   position: fixed;
   top: 0;
   background: var(--global-bg-color);
@@ -815,6 +816,11 @@ footer.sticky-bottom {
   width:100%; 
   // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 5px var(--global-divider-color);
+  ul{
+    margin-left: 0px;
+    list-style: none;
+    padding-left: 0;
+  }
 }
 
 // Experience
