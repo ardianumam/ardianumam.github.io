@@ -93,7 +93,7 @@ nav: false
           <i class="ai ai-arxiv"></i>
         </a>
       
-        <a href="#" class="hyperlink-button">
+        <a href="https://drive.google.com/file/d/1DtQ5DuQFXqF2JtDciJ0qYeqCdxHDKrNH/view?usp=sharing" class="hyperlink-button">
           <span class="hyperlink-button-text">Poster</span>
           <i class="fa fa-file-pdf"></i>
         </a>
@@ -103,7 +103,7 @@ nav: false
           <i class="fab fa-github"></i>
         </a>
       
-        <a href="#" class="hyperlink-button">
+        <a href="https://www.youtube.com/watch?v=bYR2B7UndeM&t=171s&ab_channel=ArdianUmam" class="hyperlink-button">
           <span class="hyperlink-button-text">Video</span>
           <i class="fas fa-video"></i>
         </a>
@@ -112,7 +112,8 @@ nav: false
   
 
     <br><br>
-
+    <img src="/assets/img/project_page/2024_partdistill/part_distill_animate.gif" alt="Qualitative results" class="img-fluid mx-auto d-block">
+    <div class="content" style="margin-top: 1rem">
     <!-- Abstract -->
     <h2 style="text-align: center;">Abstract</h2>
     <div class="content">
