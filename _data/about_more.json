@@ -67,7 +67,11 @@
             "order": 3
         }
     ],
-    "award": [  
+    "award": [  {
+                    "title":"CTCI Research Award 2024",
+                    "description": "Awarded by <a href='https://www.ctci.org.tw/8831/8838/about_en/9237/9238/'>The CTCI Foundation</a> to recognize outstanding PhD students in Taiwan",
+                    "order": 1
+                },
                 {
                     "title":"Doctoral Scholarship Award",
                     "description": "Awarded a doctoral (full) scholarship by the Ministry of Education - Taiwan",
@@ -97,12 +101,12 @@
     "service": [  
         {
             "title":"Conference reviewer",
-            "description": "CVPR, ICCV, ECCV, AAAI, IJCAI",
+            "description": "CVPR, ICCV, ECCV, WACV, AAAI, IJCAI, ICRA",
             "order": 1
         },
         {
             "title":"Journal reviewer",
-            "description": "CVIU, ACM CSUR",
+            "description": "TPAMI, CVIU, ACM CSUR",
             "order": 2
         }
     ]
