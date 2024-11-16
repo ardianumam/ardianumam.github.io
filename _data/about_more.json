@@ -17,11 +17,11 @@
             "order": 2
         },
         {
-            "title": "Graduate Research Assistant",
+            "title": "AI Engineer",
             "year": "2018 - 2019",
             "venue": "<a href='https://eic2.web.nycu.edu.tw/?page_id=1468'>Computer Vision Research Center</a> - NCTU",
             "logo": "assets/img/about/nctu_logo.png",
-            "description": "Working on AI Smart Drone project, specifically in charge of optimizing depth map and detector models deployed in Jetson TX2",
+            "description": "Working on AI Smart Drone project, specifically in charge of optimizing depth map and detector models using TensorRT, deployed in Jetson TX2 edge device",
             "order": 3
         },
         {
