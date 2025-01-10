@@ -106,7 +106,7 @@
         },
         {
             "title":"Journal reviewer",
-            "description": "TPAMI, CVIU, ACM CSUR",
+            "description": "TPAMI, IJCV, CVIU, ACM CSUR",
             "order": 2
         }
     ]
