@@ -5,7 +5,7 @@
             "year": "2015 - 2016",
             "venue": "LAPAN (National Institute of Aeronautics and Space)",
             "logo": "assets/img/about/lapan_logo.png",
-            "description": "Working on Maritime Surveillance System using UAV (Unmanned Aerial Vehicle)",
+            "description": "Developed a UAV telemetric monitoring system to track power consumption and UAV states",
             "order": 1
         },
         {
@@ -13,7 +13,7 @@
             "year": "Jul - Aug 2018",
             "venue": "<a href='https://www.itri.org.tw/english'>ITRI</a> (Industrial Technology Research Institute)",
             "logo": "assets/img/about/itri_logo.png",
-            "description": "Working on deep learning model compression, such as sparse regularization and pruning",
+            "description": "Studied deep learning computational reduction techniques, e.g., network pruning, from recent papers",
             "order": 2
         },
         {
@@ -21,7 +21,7 @@
             "year": "2018 - 2019",
             "venue": "<a href='https://eic2.web.nycu.edu.tw/?page_id=1468'>Computer Vision Research Center</a> - NCTU",
             "logo": "assets/img/about/nctu_logo.png",
-            "description": "Working on AI Smart Drone project, specifically in charge of optimizing depth map and detector models using TensorRT, deployed in Jetson TX2 edge device",
+            "description": "Optimized deep learning models for depth map estimation (20 to 40 FPS) and object detection (5 to 20 FPS) on edge device (Jetson TX2) through architectural downscaling and TensorRT optimization",
             "order": 3
         },
         {
@@ -29,7 +29,7 @@
             "year": "Apr - Dec 2022",
             "venue": "<a href='https://google.com'>Google</a>",
             "logo": "assets/img/about/google_logo.png",
-            "description": "Working on non-reference audio quality estimation which exploits both labeled data and unlabelled data via self-supervised approach",
+            "description": "Reduced audio quality estimation error for ChromeOS by 45% using a self-supervised learning approach. The method leverages large-scale unlabelled audio data from publicly available datasets and internal company datasets to improve the feature representations (audio encoder)",
             "order": 4
         },
         {
@@ -47,7 +47,8 @@
             "year": "",
             "school": "Gadjah Mada University",
             "logo": "assets/img/about/ugm_logo.png",
-            "description": "With specialization in control and system engineering",
+            // "description": "With specialization in control and system engineering specialization in control and system engineering",
+            "description": "Thesis: Adaptive-PID control system for dc motor speed",
             "order": 1
         },
         {
@@ -55,7 +56,7 @@
             "year": "",
             "school": "National Chiao Tung University",
             "logo": "assets/img/about/nctu_logo.png",
-            "description": "Join <a href='http://islab.cs.nctu.edu.tw/joomla/'>Intelligent System Lab</a>",
+            "description": "Join <a href='http://islab.cs.nctu.edu.tw/joomla/'>Intelligent System Lab</a>. Thesis: A light deep learning based method for bank serial number recognition",
             "order": 2
         },
         {
@@ -63,12 +64,12 @@
             "year": "2020 - Now",
             "school": "National Yang Ming Chiao Tung University",
             "logo": "assets/img/about/nycu_logo.png",
-            "description": "Join <a href='https://vllab.cs.nycu.edu.tw'>Vision and Learning Lab</a>",
+            "description": "Join <a href='https://vllab.cs.nycu.edu.tw'>Vision and Learning Lab</a>. Thesis: 3D recognition under low annotation costs",
             "order": 3
         }
     ],
     "award": [  {
-                    "title":"CTCI Research Award 2024",
+                    "title":"<a href='https://drive.google.com/file/d/1LY4kWmIsTNTmQSMe5GcJHMdG0xOf7gIf/view?usp=sharing'>CTCI Research Award 2024</a>",
                     "description": "Awarded by <a href='https://www.ctci.org.tw/8831/8838/about_en/9237/9238/'>The CTCI Foundation</a> to recognize outstanding PhD students in Taiwan",
                     "order": 1
                 },
