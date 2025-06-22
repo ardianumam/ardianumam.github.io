@@ -34,11 +34,19 @@
         },
         {
             "title": "Lecturer",
-            "year": "2019 - Now",
+            "year": "2019 - 2025",
             "venue": "<a href='https://www.itb.ac.id/'>Institut Teknologi Bandung</a>",
             "logo": "assets/img/about/itb_logo.png",
             "description": "Faculty member in School of Electrical Engineering and Informatics",
             "order": 5
+        },
+        {
+            "title": "Senior AI/Machine Learning Engineer",
+            "year": "2025 - Now",
+            "venue": "<a href='https://www.qualcomm.com/'>Qualcomm</a>",
+            "logo": "assets/img/about/qualcomm_logo.png",
+            "description": "Working on 3D human avatar and human motion estimation",
+            "order": 6
         }
     ],
     "education": [
@@ -61,7 +69,7 @@
         },
         {
             "title": "PhD in Computer Science",
-            "year": "2020 - Now",
+            "year": "",
             "school": "National Yang Ming Chiao Tung University",
             "logo": "assets/img/about/nycu_logo.png",
             "description": "Join <a href='https://vllab.cs.nycu.edu.tw'>Vision and Learning Lab</a>. Thesis: 3D recognition under low annotation costs",
@@ -102,12 +110,12 @@
     "service": [  
         {
             "title":"Conference reviewer",
-            "description": "CVPR, ICCV, ECCV, WACV, AAAI, IJCAI, ICRA",
+            "description": "CVPR, ICCV, ECCV, WACV, NeurIPS, AAAI, IJCAI, ICRA",
             "order": 1
         },
         {
             "title":"Journal reviewer",
-            "description": "TPAMI, IJCV, CVIU, ACM CSUR",
+            "description": "TPAMI, TMM, IJCV, CVIU, ACM CSUR",
             "order": 2
         }
     ]

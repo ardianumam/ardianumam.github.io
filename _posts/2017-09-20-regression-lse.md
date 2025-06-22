@@ -15,9 +15,9 @@ related_posts: true
 
 Mempelajari <em>linear regression</em> adalah langkah yang baik untuk mengawali mempelajari <em>machine learning, </em>karena sederhana dan dapat memberikan intuisi bagaimana <em>machine </em>belajar dari suatu data. Lihat gambar di bawah ini.
 
-<a href="https://ardianumam.files.wordpress.com/2017/09/regression-linear.png"><img class="aligncenter wp-image-120" src="https://ardianumam.files.wordpress.com/2017/09/regression-linear.png" alt="" width="246" height="197" /></a>
+<img src="{{ site.baseurl }}/assets/img/blog/regression/regression-linear.jpg" alt="linear regression illustration" width="400" />
 
-Diberikan sejumlah data <span style="color: #ff0000;">(titik-titik warna merah), <span style="color: #000000;">dan kita ingin mendapatkan suatu fungsi garis <span style="color: #0000ff;">(garis biru)</span> yang paling sesuai untuk merepresentasikan data titik-titik tersebut. Dalam konteks <em>machine learning, </em>kita akan menggunakan data titik-titik tersebut sebagai data training untuk membuat suatu fungsi linear yang paling sesuai untuk merepresentasikan data tersebut. Gambar di atas memiliki input satu komponen nilai (satu titik) dengan output satu komponen nilai juga. Dalam case ini, kita akan menggeneralisasinya menggunakan <em>1-dimensional</em> array (vektor) dengan $$n$$ komponen untuk inputnya, dengan output 1 komponen nilai. Kita dapat menuliskan model persamaan <em>linear regression</em> kita sebagai berikut, dengan $$ h(\mathbf{x})$$ adalah <em>hypothesis/prediction</em> untuk input $$ \mathbf{x}$$.
+Diberikan sejumlah data <span style="color: #ff0000;">(titik-titik warna merah)</span>, dan kita ingin mendapatkan suatu fungsi garis <span style="color: #0000ff;">(garis biru)</span> yang paling sesuai untuk merepresentasikan data titik-titik tersebut. Dalam konteks <em>machine learning, </em>kita akan menggunakan data titik-titik tersebut sebagai data training untuk membuat suatu fungsi linear yang paling sesuai untuk merepresentasikan data tersebut. Gambar di atas memiliki input satu komponen nilai (satu titik) dengan output satu komponen nilai juga. Dalam case ini, kita akan menggeneralisasinya menggunakan <em>1-dimensional</em> array (vektor) dengan $$n$$ komponen untuk inputnya, dengan output 1 komponen nilai. Kita dapat menuliskan model persamaan <em>linear regression</em> kita sebagai berikut, dengan $$ h(\mathbf{x})$$ adalah <em>hypothesis/prediction</em> untuk input $$ \mathbf{x}$$.
 
 $$h(\mathbf{x})=a_0x_0+a_1x_1+a_2x_2+....+a_nx_n$$
 
@@ -78,7 +78,7 @@ $$\text{dengan }\mathbf{a}=(\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y}\t
 <h2>Linear Regression using Least Square Estimation</h2>
 It is a good start to learn regression linear on machine learning study, since it is simple and can give intuitive meaning how a machine learns a bunch of data. See picture below.
 
-<a href="https://ardianumam.files.wordpress.com/2017/09/regression-linear.png"><img class="aligncenter wp-image-120" src="https://ardianumam.files.wordpress.com/2017/09/regression-linear.png" alt="" width="246" height="197" /></a>
+<img src="{{ site.baseurl }}/assets/img/blog/regression/regression-linear.jpg" alt="linear regression illustration" width="400" />
 
 Given data points <span style="color: #ff0000;">(red dots)</span> and we want to plot a linear line that fits those data <span style="color: #0000ff;">(blue line)</span>. In machine learning context, we will use those data points as training data to make best linear function to fit those those points. Picture above has one input element with one output element. We will use 1-dimensional array with $$ n $$ component for input with one output element. Our linear model can be written as follow, with $$ h(\mathbf{x})$$ means <em>hypothesis/prediction</em> of input $$ \mathbf{x}$$.
 
